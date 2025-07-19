@@ -1,0 +1,117 @@
+[2025-07-18 18:21:47] INFO: Online pipeline started – RUN_20250718_182147
+[2025-07-18 18:21:47] INFO: Loading KMeans and Random-Forest models …
+[2025-07-18 18:21:47] INFO: Loading KMeans and Random-Forest models …
+[2025-07-18 18:21:48] INFO: Loading Isolation-Forest model …
+[2025-07-18 18:21:48] INFO: Isolation-Forest model loaded (/Users/omar/Desktop/application/First year/Scripts/dataset preperation/online stages/Real live extra modular/data/new/models/offline_unsw_if.joblib)
+[2025-07-18 18:21:48] INFO: Leaf-NN loaded (/Users/omar/Desktop/application/First year/Scripts/dataset preperation/online stages/Real live extra modular/data/new/models/leaf_nn.joblib)
+[2025-07-18 18:21:49] INFO: Loaded online dataset => shape: (82332, 181)
+[2025-07-18 18:21:49] WARNING: Added missing initial columns: {'proto_rtp', 'state_URN', 'state_ECO', 'proto_icmp', 'state_no', 'state_PAR'}
+[2025-07-18 18:21:50] INFO: Data split into 21 chunks (chunk size = 4000).
+[2025-07-18 18:21:50] INFO: Chunk 1/21 – n=4000
+[2025-07-18 18:21:50] INFO: KMeans cluster distribution: {9: 2098, 0: 1387, 5: 163, 4: 79, 8: 79, 3: 73, 7: 61, 2: 37, 6: 15, 1: 8}
+[2025-07-18 18:21:51] INFO: μ_agree=0.809  σ_agree=0.062  high-disagree=6.54%
+[2025-07-18 18:21:51] INFO: Leaf-NN update: n=295 | class balance {0:5,1:290} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:21:51] INFO: ISO/RF 10.32% | NN/RF 96.85% | all-3 7.38% (295) | tri 3992/4000 [2-of-3] | mem 295 (1:290 0:5) / 10000 | prior 0.594
+[2025-07-18 18:21:56] INFO: Chunk 2/21 – n=4000
+[2025-07-18 18:21:58] INFO: μ_agree=0.852  σ_agree=0.048  high-disagree=0.35%
+[2025-07-18 18:21:58] INFO: Leaf-NN update: n=570 | class balance {0:1,1:569} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:21:58] INFO: ISO/RF 14.22% | NN/RF 99.85% | all-3 14.22% (569) | tri 569/4000 [ALL-3] | mem 864 (1:859 0:5) / 10000 | prior 0.675
+[2025-07-18 18:22:03] INFO: Chunk 3/21 – n=4000
+[2025-07-18 18:22:04] INFO: Replacing 20 tree(s) [48, 372, 295, 139, 266, 308, 122, 147, 371, 330, 331, 114, 61, 291, 377, 316, 110, 144, 111, 163] | chunk-errors=[0.4631, 0.4631, 0.4646, 0.4654, 0.4684, 0.4744, 0.479, 0.4825, 0.487, 0.4885, 0.4923, 0.4941, 0.5087, 0.5163, 0.5195, 0.5198, 0.5231, 0.5276, 0.5734, 0.6478]
+[2025-07-18 18:22:05] INFO: ACTER: replaced 20 trees | boot balanced (0:3 / 1:3971) (+replay)
+[2025-07-18 18:22:05] INFO: μ_agree=0.816  σ_agree=0.048  high-disagree=11.79%
+[2025-07-18 18:22:05] INFO: Leaf-NN update: n=33 | class balance {0:1,1:32} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:22:05] INFO: ISO/RF 0.80% | NN/RF 99.22% | all-3 0.80% (32) | tri 3969/4000 [2-of-3] | mem 896 (1:891 0:5) / 10000 | prior 0.740
+[2025-07-18 18:22:10] INFO: Chunk 4/21 – n=4000
+[2025-07-18 18:22:11] INFO: Replacing 22 tree(s) [55, 126, 307, 95, 256, 19, 96, 118, 293, 162, 352, 101, 322, 362, 179, 3, 157, 153, 380, 23, 271, 232] | chunk-errors=[0.9775, 0.9775, 0.9775, 0.9782, 0.9782, 0.9782, 0.9788, 0.979, 0.979, 0.979, 0.9792, 0.9795, 0.9795, 0.9795, 0.9802, 0.9812, 0.9818, 0.9818, 0.982, 0.9825, 0.9828, 0.9845]
+[2025-07-18 18:22:11] INFO: ACTER: replaced 22 trees | boot balanced (0:10 / 1:3995) (+replay)
+[2025-07-18 18:22:11] INFO: μ_agree=0.794  σ_agree=0.023  high-disagree=35.55%
+[2025-07-18 18:22:11] INFO: Leaf-NN update: n=216 | class balance {0:1,1:215} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:22:11] INFO: ISO/RF 5.38% | NN/RF 100.00% | all-3 5.38% (215) | tri 4000/4000 [2-of-3] | mem 1111 (1:1106 0:5) / 10000 | prior 0.792
+[2025-07-18 18:22:16] INFO: Chunk 5/21 – n=4000
+[2025-07-18 18:22:18] INFO: μ_agree=0.846  σ_agree=0.016  high-disagree=0.27%
+[2025-07-18 18:22:18] INFO: Leaf-NN update: n=287 | class balance {0:1,1:286} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:22:18] INFO: ISO/RF 7.15% | NN/RF 100.00% | all-3 7.15% (286) | tri 4000/4000 [2-of-3] | mem 1397 (1:1392 0:5) / 10000 | prior 0.834
+[2025-07-18 18:22:23] INFO: Chunk 6/21 – n=4000
+[2025-07-18 18:22:24] INFO: μ_agree=0.848  σ_agree=0.031  high-disagree=0.99%
+[2025-07-18 18:22:24] INFO: Leaf-NN update: n=303 | class balance {0:1,1:302} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:22:24] INFO: ISO/RF 22.73% | NN/RF 84.25% | all-3 7.55% (302) | tri 302/4000 [ALL-3] | mem 1699 (1:1694 0:5) / 10000 | prior 0.835
+[2025-07-18 18:22:29] INFO: Chunk 7/21 – n=4000
+[2025-07-18 18:22:30] INFO: Replacing 40 tree(s) [61, 95, 96, 101, 110, 111, 114, 118, 122, 126, 139, 144, 147, 153, 157, 162, 163, 179, 232, 256, 266, 271, 291, 295, 293, 308, 307, 362, 371, 316, 322, 326, 330, 331, 352, 380, 377, 372, 287, 300] | chunk-errors=[0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9958, 0.9963, 0.9966]
+[2025-07-18 18:22:30] INFO: ACTER: replaced 40 trees | boot balanced (0:3520 / 1:59) (+replay)
+[2025-07-18 18:22:30] INFO: μ_agree=0.665  σ_agree=0.054  high-disagree=99.89%
+[2025-07-18 18:22:30] INFO: ISO/RF 88.22% | NN/RF 0.38% | all-3 0.00% (0) | tri 3544/4000 [2-of-3] | mem 1699 (1:1694 0:5) / 10000 | prior 0.669
+[2025-07-18 18:22:35] INFO: Chunk 8/21 – n=4000
+[2025-07-18 18:22:37] INFO: Replacing 20 tree(s) [383, 342, 35, 208, 309, 4, 280, 306, 38, 170, 146, 220, 161, 8, 355, 19, 55, 3, 23, 48] | chunk-errors=[0.9599, 0.9602, 0.9619, 0.9656, 0.9673, 0.9716, 0.9734, 0.9745, 0.9751, 0.9768, 0.9802, 0.9834, 0.994, 0.9974, 0.9977, 1.0, 1.0, 1.0, 1.0, 1.0]
+[2025-07-18 18:22:37] INFO: ACTER: replaced 20 trees | boot balanced (0:3496 / 1:45) (+replay)
+[2025-07-18 18:22:37] INFO: μ_agree=0.765  σ_agree=0.052  high-disagree=24.49%
+[2025-07-18 18:22:37] INFO: ISO/RF 87.28% | NN/RF 0.00% | all-3 0.00% (0) | tri 3491/4000 [2-of-3] | mem 1699 (1:1694 0:5) / 10000 | prior 0.535
+[2025-07-18 18:22:42] INFO: Chunk 9/21 – n=4000
+[2025-07-18 18:22:43] INFO: μ_agree=0.809  σ_agree=0.055  high-disagree=0.12%
+[2025-07-18 18:22:43] INFO: Leaf-NN update: n=2 | class balance {0:1,1:1} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:22:43] INFO: ISO/RF 85.10% | NN/RF 0.03% | all-3 0.03% (1) | tri 3404/4000 [2-of-3] | mem 1700 (1:1694 0:6) / 10000 | prior 0.428
+[2025-07-18 18:22:48] INFO: Chunk 10/21 – n=4000
+[2025-07-18 18:22:50] INFO: μ_agree=0.806  σ_agree=0.057  high-disagree=0.21%
+[2025-07-18 18:22:50] INFO: Leaf-NN update: n=506 | class balance {0:6,1:500} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:22:50] INFO: ISO/RF 84.00% | NN/RF 0.03% | all-3 0.00% (0) | tri 3361/4000 [2-of-3] | mem 1700 (1:1694 0:6) / 10000 | prior 0.343
+[2025-07-18 18:22:55] INFO: Chunk 11/21 – n=4000
+[2025-07-18 18:22:56] INFO: Replacing 20 tree(s) [265, 390, 345, 136, 13, 327, 172, 247, 124, 245, 372, 71, 375, 305, 192, 364, 100, 311, 218, 151] | chunk-errors=[0.7719, 0.7719, 0.7807, 0.7807, 0.7836, 0.7865, 0.7924, 0.7924, 0.7924, 0.7953, 0.7953, 0.7953, 0.8041, 0.807, 0.8099, 0.8158, 0.8304, 0.8392, 0.845, 0.8567]
+[2025-07-18 18:22:56] INFO: ACTER: replaced 20 trees | boot balanced (0:31 / 1:317) (+replay)
+[2025-07-18 18:22:56] INFO: μ_agree=0.718  σ_agree=0.114  high-disagree=30.99%
+[2025-07-18 18:22:56] INFO: Leaf-NN update: n=342 | class balance {0:19,1:323} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:22:56] INFO: ISO/RF 21.95% | NN/RF 85.67% | all-3 8.55% (342) | tri 342/4000 [ALL-3] | mem 2042 (1:2017 0:25) / 10000 | prior 0.445
+[2025-07-18 18:23:01] INFO: Chunk 12/21 – n=4000
+[2025-07-18 18:23:03] INFO: μ_agree=0.813  σ_agree=0.059  high-disagree=6.30%
+[2025-07-18 18:23:03] INFO: Leaf-NN update: n=121 | class balance {0:1,1:120} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:23:03] INFO: ISO/RF 3.02% | NN/RF 97.92% | all-3 3.00% (120) | tri 3918/4000 [2-of-3] | mem 2162 (1:2137 0:25) / 10000 | prior 0.556
+[2025-07-18 18:23:08] INFO: Chunk 13/21 – n=4000
+[2025-07-18 18:23:09] INFO: μ_agree=0.861  σ_agree=0.061  high-disagree=5.85%
+[2025-07-18 18:23:09] INFO: Leaf-NN update: n=634 | class balance {0:1,1:633} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:23:09] INFO: ISO/RF 15.82% | NN/RF 99.00% | all-3 15.82% (633) | tri 633/4000 [ALL-3] | mem 2795 (1:2770 0:25) / 10000 | prior 0.645
+[2025-07-18 18:23:14] INFO: Chunk 14/21 – n=4000
+[2025-07-18 18:23:15] INFO: μ_agree=0.864  σ_agree=0.047  high-disagree=2.30%
+[2025-07-18 18:23:15] INFO: Leaf-NN update: n=610 | class balance {0:1,1:609} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:23:15] INFO: ISO/RF 15.32% | NN/RF 99.80% | all-3 15.22% (609) | tri 609/4000 [ALL-3] | mem 3404 (1:3379 0:25) / 10000 | prior 0.716
+[2025-07-18 18:23:20] INFO: Chunk 15/21 – n=4000
+[2025-07-18 18:23:21] INFO: Replacing 20 tree(s) [259, 342, 383, 309, 188, 294, 81, 127, 149, 314, 16, 146, 137, 351, 95, 8, 290, 295, 397, 271] | chunk-errors=[0.4664, 0.4664, 0.4683, 0.4683, 0.4701, 0.4701, 0.4832, 0.4925, 0.4925, 0.5019, 0.5075, 0.5112, 0.5261, 0.5336, 0.5392, 0.5504, 0.5522, 0.5634, 0.5784, 0.6642]
+[2025-07-18 18:23:21] INFO: ACTER: replaced 20 trees | boot balanced (0:24 / 1:537) (+replay)
+[2025-07-18 18:23:21] INFO: μ_agree=0.839  σ_agree=0.052  high-disagree=11.19%
+[2025-07-18 18:23:21] INFO: Leaf-NN update: n=537 | class balance {0:1,1:536} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:23:21] INFO: ISO/RF 13.43% | NN/RF 99.92% | all-3 13.40% (536) | tri 536/4000 [ALL-3] | mem 3940 (1:3915 0:25) / 10000 | prior 0.773
+[2025-07-18 18:23:26] INFO: Chunk 16/21 – n=4000
+[2025-07-18 18:23:28] INFO: Replacing 22 tree(s) [35, 112, 256, 241, 347, 280, 156, 287, 258, 162, 293, 338, 230, 61, 214, 263, 139, 300, 3, 161, 134, 92] | chunk-errors=[0.3821, 0.3821, 0.3821, 0.3846, 0.402, 0.4169, 0.4218, 0.4392, 0.4467, 0.4541, 0.4938, 0.4963, 0.5037, 0.5087, 0.531, 0.5409, 0.5856, 0.5906, 0.6154, 0.6303, 0.6526, 0.6725]
+[2025-07-18 18:23:28] INFO: ACTER: replaced 22 trees | boot balanced (0:32 / 1:396) (+replay)
+[2025-07-18 18:23:28] INFO: μ_agree=0.863  σ_agree=0.060  high-disagree=15.14%
+[2025-07-18 18:23:28] INFO: Leaf-NN update: n=404 | class balance {0:1,1:403} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:23:28] INFO: ISO/RF 10.10% | NN/RF 99.67% | all-3 10.08% (403) | tri 403/4000 [ALL-3] | mem 4343 (1:4318 0:25) / 10000 | prior 0.818
+[2025-07-18 18:23:33] INFO: Chunk 17/21 – n=4000
+[2025-07-18 18:23:34] INFO: Replacing 20 tree(s) [143, 158, 159, 385, 25, 187, 209, 320, 301, 198, 89, 266, 297, 139, 258, 293, 214, 263, 35, 257] | chunk-errors=[0.4899, 0.4964, 0.4992, 0.501, 0.5049, 0.5166, 0.5225, 0.5398, 0.5494, 0.5854, 0.6177, 0.626, 0.6293, 0.6469, 0.6469, 0.6539, 0.6539, 0.6542, 0.6637, 0.6842]
+[2025-07-18 18:23:35] INFO: ACTER: replaced 20 trees | boot balanced (0:365 / 1:3501)
+[2025-07-18 18:23:35] INFO: μ_agree=0.783  σ_agree=0.083  high-disagree=51.53%
+[2025-07-18 18:23:35] INFO: Leaf-NN update: n=260 | class balance {0:5,1:255} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:23:35] INFO: ISO/RF 16.35% | NN/RF 86.80% | all-3 6.50% (260) | tri 3866/4000 [2-of-3] | mem 4603 (1:4573 0:30) / 10000 | prior 0.828
+[2025-07-18 18:23:40] INFO: Chunk 18/21 – n=4000
+[2025-07-18 18:23:41] INFO: Replacing 20 tree(s) [32, 299, 278, 231, 115, 90, 130, 213, 222, 367, 352, 105, 269, 267, 77, 289, 23, 308, 144, 48] | chunk-errors=[0.4393, 0.4453, 0.4474, 0.4474, 0.4494, 0.4514, 0.4555, 0.4737, 0.4798, 0.4818, 0.4899, 0.5142, 0.5263, 0.5283, 0.5891, 0.5992, 0.7328, 0.7733, 0.7895, 0.8259]
+[2025-07-18 18:23:41] INFO: ACTER: replaced 20 trees | boot balanced (0:26 / 1:498) (+replay)
+[2025-07-18 18:23:41] INFO: μ_agree=0.816  σ_agree=0.092  high-disagree=28.34%
+[2025-07-18 18:23:41] INFO: Leaf-NN update: n=495 | class balance {0:1,1:494} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:23:41] INFO: ISO/RF 25.27% | NN/RF 86.88% | all-3 12.35% (494) | tri 494/4000 [ALL-3] | mem 5030 (1:5000 0:30) / 10000 | prior 0.836
+[2025-07-18 18:23:46] INFO: Chunk 19/21 – n=4000
+[2025-07-18 18:23:47] INFO: μ_agree=0.879  σ_agree=0.055  high-disagree=8.47%
+[2025-07-18 18:23:47] INFO: Leaf-NN update: n=308 | class balance {0:1,1:307} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:23:47] INFO: ISO/RF 20.72% | NN/RF 86.92% | all-3 7.67% (307) | tri 307/4000 [ALL-3] | mem 5030 (1:5000 0:30) / 10000 | prior 0.843
+[2025-07-18 18:23:52] INFO: Chunk 20/21 – n=4000
+[2025-07-18 18:23:53] INFO: Replacing 20 tree(s) [51, 193, 366, 15, 84, 145, 361, 304, 270, 296, 389, 80, 242, 244, 200, 346, 227, 86, 350, 111] | chunk-errors=[0.3357, 0.3357, 0.3382, 0.343, 0.3478, 0.3502, 0.3502, 0.3502, 0.3527, 0.3527, 0.3551, 0.3575, 0.3623, 0.372, 0.3792, 0.4058, 0.4251, 0.4638, 0.4758, 0.529]
+[2025-07-18 18:23:53] INFO: ACTER: replaced 20 trees | boot balanced (0:30 / 1:414) (+replay)
+[2025-07-18 18:23:53] INFO: μ_agree=0.853  σ_agree=0.058  high-disagree=11.11%
+[2025-07-18 18:23:53] INFO: Leaf-NN update: n=415 | class balance {0:1,1:414} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:23:53] INFO: Leaf-NN update: n=530 | class balance {0:30,1:500} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:23:53] INFO: ISO/RF 13.40% | NN/RF 95.58% | all-3 10.35% (414) | tri 414/4000 [ALL-3] | mem 5030 (1:5000 0:30) / 10000 | prior 0.865
+[2025-07-18 18:23:58] INFO: Chunk 21/21 – n=2332
+[2025-07-18 18:23:59] INFO: Replacing 20 tree(s) [73, 142, 348, 66, 175, 252, 384, 168, 391, 39, 0, 368, 388, 12, 224, 196, 356, 92, 59, 69] | chunk-errors=[0.4198, 0.4207, 0.4224, 0.4224, 0.425, 0.4258, 0.428, 0.4344, 0.4383, 0.4387, 0.44, 0.4408, 0.4417, 0.4507, 0.4567, 0.4575, 0.4575, 0.47, 0.4919, 0.503]
+[2025-07-18 18:23:59] INFO: ACTER: replaced 20 trees | boot balanced (0:364 / 1:1968)
+[2025-07-18 18:23:59] INFO: μ_agree=0.801  σ_agree=0.104  high-disagree=46.23%
+[2025-07-18 18:23:59] INFO: Leaf-NN update: n=257 | class balance {0:1,1:256} | sample_weight[min=nan, max=nan]
+[2025-07-18 18:23:59] INFO: ISO/RF 27.49% | NN/RF 83.49% | all-3 10.98% (256) | tri 2332/2332 [2-of-3] | mem 5030 (1:5000 0:30) / 10000 | prior 0.859
+[2025-07-18 18:24:07] INFO: Outputs saved ➜ /Users/omar/Desktop/application/First year/Scripts/dataset preperation/online stages/Real live extra modular/data/new/runs/RUN_20250718_182147
+[2025-07-18 18:24:07] INFO: Pipeline completed 
